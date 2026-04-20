@@ -18,14 +18,18 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Audio.Acts.SetVolume,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.video.Acts.SetVisible,
-		C3.Plugins.Touch.Cnds.IsTouchingObject,
 		C3.Plugins.Spritefont2.Acts.SetY,
 		C3.Plugins.Spritefont2.Exps.Y,
+		C3.Plugins.Spritefont2.Acts.SetX,
+		C3.Plugins.Spritefont2.Exps.X,
+		C3.Plugins.Touch.Cnds.IsTouchingObject,
 		C3.Plugins.Sprite.Cnds.IsOverlapping,
 		C3.Plugins.Spritefont2.Acts.SetVisible,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.video.Acts.Play,
 		C3.Plugins.Touch.Cnds.OnHoldGestureObject,
+		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.Touch.Cnds.IsInTouch,
 		C3.Plugins.Audio.Acts.Stop,
 		C3.Plugins.Touch.Cnds.OnTouchStart,
@@ -55,7 +59,7 @@ self.C3_JsPropNameTable = [
 	{TITULO: 0},
 	{BARRA: 0},
 	{UNO: 0},
-	{Sprite6: 0},
+	{TWAIN: 0},
 	{botonarriba: 0},
 	{botonabajo: 0},
 	{fondovideo: 0},
@@ -84,7 +88,11 @@ self.C3_JsPropNameTable = [
 	{BARRA2: 0},
 	{Sprite16: 0},
 	{HTMLElement: 0},
-	{Browser: 0}
+	{Browser: 0},
+	{SpriteFont2: 0},
+	{INTRO: 0},
+	{Sprite17: 0},
+	{Sprite18: 0}
 ];
 
 self.InstanceType = {
@@ -104,7 +112,7 @@ self.InstanceType = {
 	TITULO: class extends self.ISpriteFontInstance {},
 	BARRA: class extends self.ISpriteFontInstance {},
 	UNO: class extends self.ISpriteFontInstance {},
-	Sprite6: class extends self.ISpriteInstance {},
+	TWAIN: class extends self.ISpriteInstance {},
 	botonarriba: class extends self.ISpriteInstance {},
 	botonabajo: class extends self.ISpriteInstance {},
 	fondovideo: class extends self.ISpriteInstance {},
@@ -133,5 +141,9 @@ self.InstanceType = {
 	BARRA2: class extends self.ISpriteFontInstance {},
 	Sprite16: class extends self.ISpriteInstance {},
 	HTMLElement: class extends self.IHTMLElementInstance {},
-	Browser: class extends self.IInstance {}
+	Browser: class extends self.IInstance {},
+	SpriteFont2: class extends self.ISpriteFontInstance {},
+	INTRO: class extends self.ISpriteFontInstance {},
+	Sprite17: class extends self.ISpriteInstance {},
+	Sprite18: class extends self.ISpriteInstance {}
 }

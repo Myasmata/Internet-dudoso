@@ -1412,12 +1412,23 @@ self.C3_ExpressionFuncs = [
 		() => 0,
 		p => {
 			const n0 = p._GetNode(0);
+			return () => (n0.ExpObject() + 400);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => (n0.ExpObject() + 10);
+		},
+		p => {
+			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() + 1);
 		},
 		p => {
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() - 1);
-		}
+		},
+		() => "Animation 2",
+		() => 0.15,
+		() => "Animation 1"
 ];
 
 
