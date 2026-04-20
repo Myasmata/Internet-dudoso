@@ -23,6 +23,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Spritefont2.Acts.SetX,
 		C3.Plugins.Spritefont2.Exps.X,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
+		C3.Plugins.Sprite.Acts.SetY,
+		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Sprite.Cnds.IsOverlapping,
 		C3.Plugins.Spritefont2.Acts.SetVisible,
 		C3.Plugins.Sprite.Acts.SetVisible,
@@ -72,7 +74,6 @@ self.C3_JsPropNameTable = [
 	{Sprite10: 0},
 	{Video: 0},
 	{Sprite11: 0},
-	{Sprite12: 0},
 	{TRES: 0},
 	{numero3: 0},
 	{Sprite13: 0},
@@ -91,8 +92,16 @@ self.C3_JsPropNameTable = [
 	{Browser: 0},
 	{SpriteFont2: 0},
 	{INTRO: 0},
+	{Sprite6: 0},
+	{Sprite18: 0},
+	{mario: 0},
+	{Sprite12: 0},
+	{GATETE: 0},
 	{Sprite17: 0},
-	{Sprite18: 0}
+	{leaa: 0},
+	{Sprite19: 0},
+	{Sprite20: 0},
+	{Variable1: 0}
 ];
 
 self.InstanceType = {
@@ -125,7 +134,6 @@ self.InstanceType = {
 	Sprite10: class extends self.ISpriteInstance {},
 	Video: class extends self.IWorldInstance {},
 	Sprite11: class extends self.ISpriteInstance {},
-	Sprite12: class extends self.ISpriteInstance {},
 	TRES: class extends self.ISpriteFontInstance {},
 	numero3: class extends self.ISpriteFontInstance {},
 	Sprite13: class extends self.ISpriteInstance {},
@@ -144,6 +152,13 @@ self.InstanceType = {
 	Browser: class extends self.IInstance {},
 	SpriteFont2: class extends self.ISpriteFontInstance {},
 	INTRO: class extends self.ISpriteFontInstance {},
+	Sprite6: class extends self.ISpriteInstance {},
+	Sprite18: class extends self.ISpriteInstance {},
+	mario: class extends self.ISpriteInstance {},
+	Sprite12: class extends self.ISpriteInstance {},
+	GATETE: class extends self.ISpriteInstance {},
 	Sprite17: class extends self.ISpriteInstance {},
-	Sprite18: class extends self.ISpriteInstance {}
+	leaa: class extends self.ISpriteInstance {},
+	Sprite19: class extends self.ISpriteInstance {},
+	Sprite20: class extends self.ISpriteInstance {}
 }
